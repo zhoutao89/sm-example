@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>懒加载</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    img{
+        border: none;
+        vertical-align: middle;
+    }
+    .in{
+        border: 1px solid black;
+        margin: 10px;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+        float: left;
+    }
+    .in img{
+        height: 200px;
+        width: 200px;
+    }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/1.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/2.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/3.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/4.jpg"></li>    
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/5.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/6.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/7.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/8.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/9.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/10.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/1.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/2.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/3.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/4.jpg"></li>    
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/5.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/6.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/7.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/8.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/9.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/10.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/1.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/2.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/3.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/4.jpg"></li>    
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/5.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/6.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/7.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/8.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/9.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/10.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/1.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/2.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/3.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/4.jpg"></li>    
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/5.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/6.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/7.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/8.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/9.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/10.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/1.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/2.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/3.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/4.jpg"></li>    
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/5.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/6.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/7.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/8.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/9.jpg"></li>
+        <li class="in"><img src="img/loading.gif" alt="测试" data-original = "img/10.jpg"></li>                    
+    </ul>
+
+    <script>
+        var oBtn = document.getElementsByTagName('button')[0];
+        var aImages = document.images;
+        loadImg(aImages);
+        window.onscroll = function(){
+            loadImg(aImages);
+        };
+        function loadImg(arr){
+            for( var i = 0,len = arr.length; i < len; i++){
+                if(arr[i].getBoundingClientRect().top < document.documentElement.clientHeight && !arr[i].isLoad){
+                    arr[i].isLoad = true;
+                    arr[i].style.cssText = "transition: ''; opacity: 0;"
+                    if(arr[i].dataset){
+                        aftLoadImg(arr[i],arr[i].dataset.original);    
+                    }else{
+                        aftLoadImg(arr[i],arr[i].getAttribute("data-original"));
+                    }
+                    (function(i){
+                        setTimeout(function(){
+                            arr[i].style.cssText = "transition: 1s; opacity: 1;"
+                        },16)
+                    })(i);
+                }
+            }
+        }
+        function aftLoadImg(obj,url){
+            var oImg = new Image();
+            oImg.onload = function(){
+                obj.src = oImg.src;
+            }
+            oImg.src = url;
+        }
+    </script>    
+</body>
+</html>

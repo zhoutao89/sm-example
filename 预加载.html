@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>js预加载</title>
+    </head>
+    <script>
+        //针对firefox
+        window.addEventListener("DOMContentLoaded", preloadImages);
+        //创建图片数据
+        var imageArray = new Array("img/1.jpg", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg", "img/6.jpg", "img/7.jpg", "img/8.jpg", "img/9.jpg", "img/10.jpg");
+
+        preloadImages(imageArray);
+
+        function preloadImages(imageArray) {
+            for(var i = 0; i < imageArray.length; i++) {
+                //创建图片对象
+                var tempImage = new Image();
+                //填充图片
+                tempImage.src = imageArray[i];
+                document.write('<img src="' + imageArray[i] + '" />');
+            }
+        }
+    </script>
+
+    <body>
+    </body>
+
+</html>
