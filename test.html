@@ -7,15 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1></h1>
+    <input type="button" onclick="disp_prompt()" value="显示一个提示框" />
 
     <script>
         //var obj = {name:'zhoutao',age:28};
         //console.log(Object.keys(obj)); //['zhoutao',28]
 
-        let obj1 = { a: 0 , b: { c: 0}};
-        let obj2 = Object.assign({}, obj1);
-        console.log(JSON.stringify(obj2));
+        // let obj1 = { a: 0 , b: { c: 0}};
+        // let obj2 = Object.assign({}, obj1);
+        // console.log(JSON.stringify(obj2));
+        
+        function disp_prompt(){
+            var name=prompt("请输入您的名字","Zhou Tao")
+            if (name!=null && name!=""){
+                document.write("你好，" + name + "！今天过得好吗？")
+            }
+        }
     </script>
 </body>
 </html>
